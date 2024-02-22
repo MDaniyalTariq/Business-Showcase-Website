@@ -1,0 +1,239 @@
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.center-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.subheading {
+  transform: rotate(-90deg);
+  transform-origin: left top 6;
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  color: #888;
+}
+#company-info {
+  background-color: transparent; /* Background color with opacity for the company info section */
+  padding: 32px;
+  margin-left: 80px;
+  margin-top: 50px;
+}
+.text-background {
+  background-image: url("at-a-glance-bg-min.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  color: black; /* Text color for better readability */
+  position: relative;
+  margin: 0;
+  text-align: justify;
+}
+.vid {
+  margin: 0;
+  padding: 0;
+}
+.hd {
+  margin-bottom: -24px;
+}
+.featured-products {
+  padding: 60px 0;
+  background: linear-gradient(
+    135deg,
+    #8c001a,
+    #330000
+  ); /* Adjust the shades of crimson and black */
+  text-align: center;
+  color: white; /* Adjust text color for better visibility */
+  background-size: 200% 200%; /* Enabling background animation */
+  animation: gradientAnimation 10s ease infinite; /* Creating a smooth gradient transition */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.featured-products h2 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.featured-products p {
+  font-size: 1.2rem;
+  color: #c3c8cc;
+  margin-bottom: 40px;
+}
+
+.card {
+  padding: 10px;
+  margin: 5px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  height: 350px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.card img {
+  object-fit: contain;
+  width: 100px;
+  height: 100px;
+  align-self: center;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  border: 1px solid black;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+  background-color: #330000;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #f0f0f0;
+  width: 200px;
+  text-align: center;
+}
+.column {
+  text-align: center;
+  padding: 30px;
+  margin: 0%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.column i {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.column h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.column p {
+    margin: 0;
+  font-size: 1rem;
+  color: #777;
+}
+
+.column button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: crimson;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 100px;
+
+}
+
+.column button:hover {
+  background-color: transparent;
+  color: crimson;
+  border: 1px solid white;
+}
+.row {
+  display: flex;
+}
+
+.row > div[class^="col-"] {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.col-md-3 {
+  padding: 10px;
+  height: 100px;
+}
+.col-md-6 {
+  padding: 0;
+}
+#med {
+    text-align: center;
+    align-items: center;
+    height: 650px;
+    padding-top: 15%;
+    margin:0px;
+}
+#med.column i {
+    font-size:150px ;
+}
+#med.column h3 {
+    font-size:50px ;
+    margin-top: 20px;
+}
+#med.column p {
+    font-size:30px ;
+}
+/* Set height for the section */
+#basic-section {
+    display: flex;
+    height: 600px; /* Set your desired height */
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Equal height columns inside the section */
+#basic-section .row {
+    display: flex;
+    flex: 1;
+    height: 600px;
+    margin: 0px;
+    padding: 0%;
+}
+
+/* Column styles */
+#basic-section .column {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    height: 300px;
+    margin: 0px;
+}
+#specificHeight {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+#me{
+    background-image: url('factory-img-night-min.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: crimson;
+    margin: 0px;
+}

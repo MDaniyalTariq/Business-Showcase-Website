@@ -1,0 +1,268 @@
+
+.gallery-title
+{
+    font-size: 35px;
+    color: black;
+    letter-spacing: 12px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 12%;
+    left: 43.5%;
+    height: 45px;
+    border-bottom: 2px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+.center-buttons {
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px; /* Adjust margin as needed */
+    margin-bottom: 30px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+.filter {
+    transition: transform 0.3s ease-in-out;
+}
+
+.filter:hover {
+    transform: scale(1.05);
+}
+
+
+/* Footer Styling */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+    color: white;
+  }
+  
+  /* Before-Footer Styling */
+  .before-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+  .before-footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .before-footer-section {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+
+  .before-footer-heading {
+    font-size: 24px;
+    color: #3498db;
+    margin-bottom: 10px;
+  }
+  .contact-info p{
+    color: white;
+  }
+  /* About Us Section Styles */
+  .about-us-section {
+    text-align: center;
+  }
+  
+  .about-us-heading {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .about-us-paragraph {
+    color: #ccc;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .follow-us-heading {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+  
+  /* Social Media Icons Styles */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    font-size: 32px;
+    color: #3498db;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #297fb8;
+  }
+  /* Apply About Us Section Styling to Form and Other Sections */
+  .quote-form,
+  .before-footer-section{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    margin: 10px;
+    box-sizing: border-box;
+  }
+
+  .before-footer-heading,
+  .quote-form h3 {
+    font-size: 24px;
+    color: #3498db;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Apply the rest of the specific styles for the form */
+  .quote-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .quote-form input,
+  .quote-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .quote-form textarea {
+    height: 100px;
+  }
+
+  .quote-form button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .quote-form button:hover {
+    background-color: #297fb8;
+  }
+  .before-footer-section li{
+    color: #ccc;
+    margin-bottom: 20px;
+    line-height: 0.5;
+    letter-spacing: 5px;
+    font-size: large;
+  }
+  
+  .before-footer-section a{
+    color: #ccc;
+    margin-bottom: 20px;
+    line-height: 0.5;
+    letter-spacing: 5px;
+    font-size: large;
+  }
+  .top {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+
+.top.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.arrow {
+    display: inline-block;
+    transform: translateY(-2px);
+    margin-right: 5px;
+    transition: transform 0.4s;
+}
+
+.top.active .arrow {
+    transform: translateY(0);
+}
+
+  

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
+    <link rel="stylesheet" href="ContactUs.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("contact-form").submit();
+        }
+    </script>
+</head>
+<header>
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 right_info">
+                    <p><i class="fa fa-map-marker"></i> UET RCET / Wazirabad-Jaura Sian/Gakhar Mandi</p>
+                </div>
+                <div class="col-md-7 col-sm-12 left_info">
+                    <ul>
+                        <li><i class="fa fa-mobile-alt"></i><a href="#">+92-3159659 063</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="#">M.DaniyalTariq@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-main">
+        <div class="container">
+            <nav id='cssmenu'>
+                <div class="logo">
+                    <a href="index.html"><img src="Screenshot_2023-09-29_134154-removebg-preview.png"></a>
+                </div>
+                <div id="head-mobile"></div>
+                <div class="button"></div>
+                <ul>
+                    <li ><a href='index.html'>Home</a></li>
+
+                    <li><a href='infrastructure.html'>Infrastructure</a></li>
+                    <li><a href='products.html'>Products</a>
+                        <ul>
+                            <li><a href='Gloves.html'>Gloves</a>
+                                <ul>
+                                    <li><a href='Gloves.html'>All</a></li>
+                                    <li><a href='LeatherGloves.html'>Leather Gloves</a></li>
+                                </ul>
+                            </li>
+                            <li><a href='#'>Jackets</a>
+                            </li>
+                            <li><a href='#'>Apparel</a></li>
+                            <li><a href='#'>Surgical Instruments</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='Certificates.html'>Certificates</a></li>
+                    <li class='active'><a href='ContactUs.html'>Contact Us</a></li>
+                    <li><a href='About.html'>About Us</a></li>
+                    <li><a href='orderform.html'>Book Online</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<body>
+    <main>
+        <section class="contact-section">
+            <div class="bg-image">
+                <div class="blur"></div>
+                <h1 class="heading">Contact Us</h1>
+            </div>
+            <p class="tagline">We Are Ready To Hear You Out!</p>
+            <div class="contact-container">
+                <div class="contact-details">
+                    <h2>Get in touch with us</h2>
+                    <p>For any further information or queries, feel free to contact us on the information given below.
+                    </p>
+                    <!-- Headquarters -->
+                    <!-- Example: Using Font Awesome icons in your HTML -->
+                    <div class="office-details">
+                        <h3><i class="fas fa-plus"></i> Headquarters </h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Said Pur Gondal Road, Sialkot-51310, Pakistan</p>
+                        <p><i class="fas fa-phone"></i> +92-52-4268186</p>
+                        <p><i class="fas fa-envelope"></i> info@vipgroup.com</p>
+                    </div>
+
+                    <div class="office-details">
+                        <h3><i class="fas fa-plus"></i> Site Office </h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Plot No. 384, Sector 7/A Korangi Industrial Area,
+                            Karachi - Pakistan</p>
+                        <p><i class="fas fa-phone"></i> +92-21-3512447</p>
+                        <p><i class="fas fa-envelope"></i> sales@vipgroup.com</p>
+                    </div>
+
+                    <div class="office-details">
+                        <h3><i class="fas fa-plus"></i> USA Office </h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 82-96, Country Pointe Circle, NY-11427, USA</p>
+                        <p><i class="fas fa-phone"></i> +001-000-987654</p>
+                        <p><i class="fas fa-envelope"></i> usa@vipgroup.com</p>
+                    </div>
+
+                    <div class="office-details">
+                        <h3><i class="fas fa-plus"></i> Europe Office </h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Blaichacher Str.5 D-81476 München</p>
+                        <p><i class="fas fa-phone"></i> +49-000-11223344</p>
+                        <p><i class="fas fa-envelope"></i> europe@vipgroup.com</p>
+                    </div>
+
+                </div>
+                <div class="contact-form-container" id="contactform">
+                    <h2>Leave a message</h2>
+                    <p>Feel free to leave us a message and we will reach back to you as soon as possible.</p>
+                    <form id="contact-form" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="E-mail" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <div class="g-recaptcha" data-sitekey="6LdElxQpAAAAAM6biZHjdfzVjGI9yS45S1-Go1Zp" required></div>
+                        <button type="button" id="submit-btn">Send</button>
+                    </form>
+                    <div id="form-response"></div>
+                    <script>
+                        $(document).ready(function () {
+                            $('#submit-btn').click(function (e) {
+                                e.preventDefault();
+
+                                var formData = $('#contact-form').serialize();
+
+                                $.ajax({
+                                    type: 'POST',
+                                    url: 'submit.php',
+                                    data: formData,
+                                    success: function (response) {
+                                        $('#form-response').html(response);
+                                        $('#contact-form')[0].reset(); // Resetting the form
+
+                                        // Show success message for 3 seconds and then remove
+                                        var successMessage = $('#form-response');
+                                        successMessage.show();
+                                        setTimeout(function () {
+                                            successMessage.fadeOut('slow');
+                                        }, 3000);
+                                    },
+                                    error: function () {
+                                        $('#form-response').html('An error occurred');
+                                    }
+                                });
+                            });
+                        });
+                    </script>
+
+
+
+
+                </div>
+
+            </div>
+        </section>
+        <section class="map-section">
+            <p class="tagline">Find us on the map</p>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57392736.398641095!2d-65.08732224838037!3d28.60053778390766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391907c3cc256481%3A0x1795b129e008e2c8!2sGloves%20n%20Gloves!5e0!3m2!1sen!2s!4v1700378350724!5m2!1sen!2s"
+                    width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <section class="contact-support">
+                <h2>Get in touch with our creative-friendly support team</h2>
+                <p class="business-hours">Our business hours are 9AM-6PM Monday-Saturday.</p>
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <h3>Chat Support</h3>
+                        <p>Live chat with our team for instant assistance.</p>
+                        <!-- HTML for the live chat button -->
+                        <button class="contact-button" id="liveChatButton">Live Chat</button>
+
+                        <!-- Script to open LiveChat window when the button is clicked -->
+                        <script>
+                            // Function to open LiveChat window
+                            function openLiveChat() {
+                                window.__lc = window.__lc || {};
+                                window.__lc.license = 16665150;
+                                if (!window.LC_API) { return; }
+                                window.LC_API.open_chat_window();
+                            }
+
+                            // Event listener for the button click
+                            document.getElementById('liveChatButton').addEventListener('click', openLiveChat);
+                        </script>
+
+                    </div>
+                    <div class="contact-card">
+                        <h3>Email Support</h3>
+                        <p>Drop us an email and we'll get back to you shortly.</p>
+                        <button class="contact-button" onclick="sendEmail()">Send Email</button>
+                    </div>
+
+                    <script>
+                        function sendEmail() {
+                            // Replace 'email@example.com' with your email address
+                            var emailAddress = 'm.daniyaltariq9063@gmail.com';
+
+                            // Replace 'Subject' and 'Body' with your desired subject and body
+                            var subject = 'Support Request';
+                            var body = 'Hello, I need help with...';
+
+                            var mailtoLink = 'mailto:' + emailAddress + '?subject=' + subject + '&body=' + body;
+
+                            // Open the user's default email client
+                            window.location.href = mailtoLink;
+                        }
+                    </script>
+
+                    <div class="contact-card">
+                        <h3>Help Center</h3>
+                        <p>Visit our help center for FAQs and guides.</p>
+                        <button class="contact-button" onclick="exploreHelpCenter()">Explore Help Center</button>
+                    </div>
+
+                    <script>
+                        function exploreHelpCenter() {
+                            var helpCenterURL = "http://localhost/Ezzem/ContactUs.html#Faq";
+
+                            window.open(helpCenterURL, '_parent');
+                        }
+                    </script>
+
+                </div>
+
+            </section>
+            <section class="real-people-section">
+                <p class="subtitle" style="color: crimson;">Our Success Team</p>
+                <h2>Talk to Real People</h2>
+                <p class="subtitle">Our dedicated team is committed to providing exceptional support and guidance for
+                    all your needs</p>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="bu.jpg" alt="Person 1">
+                        <h3>M.Abbas</h3>
+                        <p>CEO</p>
+                        <p onclick="showContact('contact-info-1')">View Contact</p>
+                        <div id="contact-info-1" class="contact-info" style="display: none;">
+                            <p>Email: M.Abbas@Ezzem.com</p>
+                            <p>Contact: +1234567890</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="bu2.webp" alt="Person 1">
+                        <h3>M.Aabid</h3>
+                        <p>Director</p>
+                        <p onclick="showContact('contact-info-2')">View Contact</p>
+                        <div id="contact-info-2" class="contact-info" style="display: none;">
+                            <p>Email: M.Aabid@Ezzem.com</p>
+                            <p>Contact: +1234567890</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="bu3.jpg" alt="Person 1">
+                        <h3>Ch.Naeem</h3>
+                        <p>Finance Head</p>
+                        <p onclick="showContact('contact-info-3')">View Contact</p>
+                        <div id="contact-info-3" class="contact-info" style="display: none;">
+                            <p>Email: Ch.Naeem@Ezzem.com</p>
+                            <p>Contact: +1234567890</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="bu4.jpeg" alt="Person 1">
+                        <h3>Tariq Chaudary</h3>
+                        <p>Managing Head</p>
+                        <p onclick="showContact('contact-info-4')">View Contact</p>
+                        <div id="contact-info-4" class="contact-info" style="display: none;">
+                            <p>Email: Tariq.Chaudary@Ezzem.com</p>
+                            <p>Contact: +1234567890</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <script>
+                function showContact(infoId) {
+                    const contactInfo = document.getElementById(infoId);
+                    if (contactInfo.style.display === "none") {
+                        contactInfo.style.display = "block";
+                    } else {
+                        contactInfo.style.display = "none";
+                    }
+                }
+            </script>
+
+            <section id="Faq" class="faq-section">
+                <div class="faq-heading">
+                    <h2 class="faq-main-heading">Frequently Asked Questions</h2>
+                    <p class="faq-sub-heading">Explore our <span style="color:#3498db ">Frequently Asked
+                            Questions</span> for in-depth
+                        insights</p>
+                    <section class="social-media">
+                        <h2>Connect with Us</h2>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/YourCompany" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.twitter.com/YourCompany" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/YourCompany" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <!-- Add more social media links as needed -->
+                        </div>
+                    </section>
+                </div>
+
+
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(1)">
+                            <span class="faq-icon"><i class="fas fa-question-circle"></i></span>
+                            How can I get a sample, and how long will it take?
+                        </div>
+                        <div class="faq-answer" id="answer1">To get a sample, please contact our customer service. The
+                            time for sample
+                            delivery depends on various factors and will be communicated to you during the process.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(2)">
+                            <span class="faq-icon"><i class="fas fa-box"></i></span>
+                            What is your MOQ?
+                        </div>
+                        <div class="faq-answer" id="answer2">Our Minimum Order Quantity (MOQ) varies depending on the
+                            product. Please
+                            check the product details or contact our sales team for specific information.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(3)">
+                            <span class="faq-icon"><i class="fas fa-print"></i></span>
+                            Can my logo be printed on the product?
+                        </div>
+                        <div class="faq-answer" id="answer3">Yes, we offer customization services, including logo
+                            printing. Please
+                            provide the details, and our team will assist you with the process.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(4)">
+                            <span class="faq-icon"><i class="fas fa-truck"></i></span>
+                            What are your delivery terms?
+                        </div>
+                        <div class="faq-answer" id="answer4">Our delivery terms depend on the shipping method and your
+                            location. Please
+                            check our shipping information or contact our logistics team for details.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(5)">
+                            <span class="faq-icon"><i class="fas fa-box-open"></i></span>
+                            What are your packaging standards?
+                        </div>
+                        <div class="faq-answer" id="answer5">We adhere to high packaging standards to ensure the safe
+                            delivery of our
+                            products. The packaging details are provided with each product description.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(6)">
+                            <span class="faq-icon"><i class="fas fa-file-invoice-dollar"></i></span>
+                            What are the requirements for a price/quotation of your products?
+                        </div>
+                        <div class="faq-answer" id="answer6">To receive a price/quotation, please provide details such
+                            as product
+                            specifications, quantity, and any customization requirements. Contact our sales team for a
+                            personalized quote.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <script>
+                function toggleAnswer(id) {
+                    var answer = document.getElementById('answer' + id);
+                    var allAnswers = document.querySelectorAll('.faq-answer');
+
+                    allAnswers.forEach(function (item) {
+                        if (item.id !== 'answer' + id) {
+                            item.classList.remove('show');
+                        }
+                    });
+
+                    answer.classList.toggle('show');
+                }
+            </script>
+    </main>
+
+    <!-- Before-Footer Section -->
+    <div class="before-footer">
+        <div class="before-footer-container">
+
+            <!-- First Division -->
+            <div class="before-footer-section about-us-section">
+                <h3 class="before-footer-heading">About Us</h3>
+                <p class="about-us-heading">Ezzem Enterprises</p>
+                <p class="about-us-paragraph">
+                    Short description about your company and what you do. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <h4 class="follow-us-heading">Follow Us On</h4>
+                <div class="social-icons">
+                    <!-- Add your social media icons here -->
+                    <i class="fab fa-facebook social-icon"></i>
+                    <i class="fab fa-twitter social-icon"></i>
+                    <i class="fab fa-instagram social-icon"></i>
+                    <!-- Add more social media icons as needed -->
+                </div>
+            </div>
+
+            <!-- Second Division -->
+            <div class="before-footer-section">
+                <div class="before-footer-heading">Quick Links</div>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-building"></i> Infrastructure</a></li>
+                    <li><a href="#"><i class="fas fa-box"></i> Products</a></li>
+                    <li><a href="#"><i class="fas fa-certificate"></i> Certifications</a></li>
+                    <li><a href="#"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="#"><i class="fas fa-phone"></i> Contact Us</a></li>
+                    <li><a href="#"><i class="fas fa-book"></i> Book Now</a></li>
+                </ul>
+            </div>
+
+            <!-- Third Division -->
+            <div class="before-footer-section">
+                <div class="before-footer-heading">Products</div>
+                <ul>
+                    <li><a href="#"><i class="fas fa-glove"></i> Gloves</a></li>
+                    <li><a href="#"><i class="fas fa-jacket"></i> Jackets</a></li>
+                    <li><a href="#"><i class="fas fa-tshirt"></i> Apparel</a></li>
+                    <li><a href="#"><i class="fas fa-stethoscope"></i> Surgical Instruments</a></li>
+                </ul>
+            </div>
+
+            <!-- Fourth Division -->
+            <div class="before-footer-section">
+                <div class="before-footer-heading">Contact Info</div>
+                <div class="contact-info">
+                    <p><i class="fas fa-globe"></i> www.Ezzem.com.pk</p>
+                    <p><i class="fas fa-envelope"></i> DAniyal@Ezzem.com,pk</p>
+                    <p><i class="fas fa-at"></i> wwe.ezzemproduction/daniyal.com.pk</p>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp Numbers:
+                        <br>
+                        <i class="fas fa-phone"></i> +92 315 9659063
+                        <br>
+                        <i class="fas fa-phone"></i> +92 301 9659063
+                        <br>
+                        <i class="fas fa-phone"></i> +92 303 9427846
+                    </p>
+                    <p><i class="fas fa-phone"></i> Telephone: +1122334455</p>
+                    <p><i class="fas fa-map-marker-alt"></i> UET Rachna Campus,GRW,Punjab</p>
+                </div>
+            </div>
+            <!-- Second Division with Get a Quote Form -->
+            <div class="before-footer-section">
+                <div class="before-footer-heading">Get a Quote</div>
+                <form class="quote-form">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Start of LiveChat (www.livechat.com) code -->
+    <script>
+        window.__lc = window.__lc || {};
+        window.__lc.license = 16665150;
+        ; (function (n, t, c) { function i(n) { return e._h ? e._h.apply(null, n) : e._q.push(n) } var e = { _q: [], _h: null, _v: "2.0", on: function () { i(["on", c.call(arguments)]) }, once: function () { i(["once", c.call(arguments)]) }, off: function () { i(["off", c.call(arguments)]) }, get: function () { if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load."); return i(["get", c.call(arguments)]) }, call: function () { i(["call", c.call(arguments)]) }, init: function () { var n = t.createElement("script"); n.async = !0, n.type = "text/javascript", n.src = "https://cdn.livechatinc.com/tracking.js", t.head.appendChild(n) } }; !n.__lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e }(window, document, [].slice))
+    </script>
+    <noscript><a href="https://www.livechat.com/chat-with/16665150/" rel="nofollow">Chat with us</a>, powered by <a
+            href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+    <!-- End of LiveChat code -->
+
+</body>
+<footer>
+    <div class="footer">
+        <p class="copyright">&copy; 2023 Ezzem Enterprises</p>
+        <p class="powered-by">Powered by [M.Daniyal Tariq]</p>
+    </div>
+</footer>
+
+</html>
